@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ödsmåls Däckservice – däck, service och bilreparationer i Spekeröd."
+    />
+    <title>Ödsmåls Däckservice | Rätt däck för dig</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navigation">
+        <a class="logo-link" href="#hem" aria-label="Ödsmåls Däckservice startsida">
+          <img src="assets/odsmals-dackservice-logo.jpg" alt="Ödsmåls Däckservice" />
+        </a>
+
+        <button class="menu-button" type="button" aria-label="Öppna meny" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" aria-label="Huvudmeny">
+          <a href="#hem">Hem</a>
+          <a href="#tjanster">Tjänster</a>
+          <a href="#om-oss">Om oss</a>
+          <a href="#kontakt">Kontakt</a>
+          <a class="nav-booking" href="#boka">Boka tid</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hem">
+        <div class="container hero-content">
+          <p class="eyebrow">Din lokala bilverkstad i Spekeröd</p>
+          <h1>Rätt däck.<br /><span>Rätt service.</span></h1>
+          <p class="hero-text">Vi hjälper dig med allt från däckbyte och däckhotell till service, reparationer och AC-påfyllning.</p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#boka">Boka tid</a>
+            <a class="button button-light" href="tel:0730595319">Ring 073-059 53 19</a>
+          </div>
+        </div>
+        <div class="hero-tire" aria-hidden="true"><div></div></div>
+      </section>
+
+      <section class="services section" id="tjanster">
+        <div class="container">
+          <h2>Vi tar hand om din bil</h2>
+          <p class="section-intro">Trygg och personlig hjälp, oavsett om det gäller däcken eller resten av bilen.</p>
+          <p class="eyebrow red">Våra tjänster</p>
+          <div class="service-grid">
+            <article class="service-card"><h3>Däckbyte</h3><p>Snabbt och tryggt byte mellan sommar- och vinterdäck.</p></article>
+            <article class="service-card"><h3>Däckhotell</h3><p>Vi förvarar dina däck säkert och ser över dem inför nästa säsong.</p></article>
+            <article class="service-card"><h3>Reparationer</h3><p>Vi hjälper till med reparationer och felsökning av din bil.</p></article>
+            <article class="service-card"><h3>Service</h3><p>Vi följer alltid tillverkarens rekommendationer.</p></article>
+            <article class="service-card"><h3>AC-påfyllning</h3><p>Få tillbaka en sval och behaglig bil inför varmare dagar.</p></article>
+            <article class="service-card"><h3>Allt inom bil</h3><p>Hör av dig med ditt ärende, så ser vi hur vi kan hjälpa dig.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="om-oss">
+        <div class="container about-grid">
+          <div class="about-visual">
+            <img src="assets/odsmals-dackservice-logo.jpg" alt="Ödsmåls Däckservice – Rätt däck för dig" />
+          </div>
+          <div>
+            <p class="eyebrow red">Om Ödsmåls Däckservice</p>
+            <h2>Personlig service du kan lita på</h2>
+            <p>Hos Ödsmåls Däckservice får du hjälp av en lokal verkstad som bryr sig om både bilen och kunden. Vi arbetar för att du ska kunna köra vidare tryggt och säkert.</p>
+            <p>Behöver du hjälp med däck, service eller reparation? Kontakta oss så hittar vi en lösning som passar dig.</p>
+            <a class="text-link" href="#kontakt">Hitta till oss <span>→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking section" id="boka">
+        <div class="container booking-grid">
+          <div class="booking-info">
+            <p class="eyebrow">Boka verkstadstid</p>
+            <h2>Skicka en<br />boknings-<br />förfrågan</h2>
+            <p>Fyll i formuläret så kontaktar vi dig för att bekräfta en tid som passar.</p>
+            <div class="booking-note"><strong>Observera:</strong> Din bokning är en förfrågan och är inte bekräftad förrän vi har kontaktat dig.</div>
+          </div>
+          <form class="booking-form" id="booking-form">
+            <div class="form-row"><div><label for="name">Namn</label><input id="name" name="name" type="text" required /></div><div><label for="phone">Telefonnummer</label><input id="phone" name="phone" type="tel" required /></div></div>
+            <div class="form-row"><div><label for="registration">Registreringsnummer</label><input id="registration" name="registration" type="text" placeholder="ABC123 eller ABC12D" maxlength="6" autocomplete="off" required /><p class="date-help">Exempel: ABC123 eller ABC12D.</p></div><div><label for="date">Önskat datum</label><input id="date" name="date" type="date" required /><p class="date-help">Endast kommande vardagar som inte är röda dagar.</p><p class="date-feedback" id="date-feedback" aria-live="polite"></p></div></div>
+            <label for="service">Vad vill du boka?</label>
+            <select id="service" name="service" required><option value="">Välj tjänst</option><option>Däckbyte</option><option>Däckhotell</option><option>Reparation</option><option>Service</option><option>AC-påfyllning</option><option>Annat</option></select>
+            <label for="message">Meddelande <span>(valfritt)</span></label><textarea id="message" name="message" rows="4" placeholder="Berätta gärna kort om ditt ärende..."></textarea>
+            <button class="button button-primary" type="submit">Skapa bokningsmejl</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+            <p class="privacy-short">När du skickar en bokningsförfrågan använder vi dina uppgifter endast för att kontakta dig och hantera ärendet. <a href="#integritet">Läs om integritet</a>.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact section" id="kontakt">
+        <div class="container">
+          <p class="eyebrow red">Kontakt</p><h2>Välkommen till oss</h2>
+          <div class="contact-grid">
+            <div><h3>Ring oss</h3><a href="tel:0730595319">073-059 53 19</a></div>
+            <div><h3>E-post</h3><a href="mailto:Sebastian@odsmalsdack.se">Sebastian@odsmalsdack.se</a></div>
+            <div><h3>Besöksadress</h3><p>Grössbacke 150<br />444 93 Spekeröd</p></div>
+            <div><h3>Öppettider</h3><p>Måndag–fredag<br /><strong>08:00–17:00</strong></p></div>
+          </div>
+          <div class="map-grid">
+            <iframe
+              title="Karta till Ödsmåls Däckservice"
+              src="https://www.google.com/maps?q=%C3%96dsm%C3%A5ls%20D%C3%A4ckservice%2C%20Gr%C3%B6ssbacke%20150%2C%20444%2093%20Speker%C3%B6d&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="directions-card">
+              <p class="eyebrow red">Hitta till oss</p>
+              <h3>Grössbacke 150<br />Spekeröd</h3>
+              <p>Öppna vägbeskrivning i Google Maps och kör tryggt hela vägen till verkstaden.</p>
+              <a class="button button-primary" href="https://www.google.com/maps/dir/?api=1&destination=%C3%96dsm%C3%A5ls%20D%C3%A4ckservice%2C%20Gr%C3%B6ssbacke%20150%2C%20444%2093%20Speker%C3%B6d" target="_blank" rel="noopener">Öppna vägbeskrivning</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="privacy section" id="integritet">
+        <div class="container privacy-content">
+          <p class="eyebrow red">Integritet</p>
+          <h2>Så hanterar vi dina uppgifter</h2>
+          <p>När du skickar en bokningsförfrågan kan vi få ditt namn, telefonnummer, registreringsnummer, önskat datum och ditt meddelande. Uppgifterna används endast för att kontakta dig och hantera din bokningsförfrågan.</p>
+          <p>Ödsmåls Däckservice sparar inte uppgifterna längre än vad som behövs för att hantera ärendet och följa eventuella krav i lag. Uppgifter delas inte med andra företag för marknadsföring.</p>
+          <p>Har du frågor om hur dina uppgifter hanteras, kontakta oss på <a href="mailto:Sebastian@odsmalsdack.se">Sebastian@odsmalsdack.se</a>.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="container footer-content"><img src="assets/odsmals-dackservice-logo.jpg" alt="Ödsmåls Däckservice" /><p>© <span id="year"></span> Ödsmåls Däckservice · <a href="#integritet">Integritet</a></p></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
